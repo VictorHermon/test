@@ -9,6 +9,7 @@ dependencies = []
 [dependency-groups]
 dev = [
     "pre-commit>=4.5.1",
+    "taskipy>=1.14.1",
 ]
 
 [tool.commitizen]
@@ -18,3 +19,7 @@ version_scheme = "pep440"
 version_provider = "uv"
 update_changelog_on_bump = true
 major_version_zero = true
+
+[tool.taskipy.tasks]
+commit = "cz commit"
+check = "cz check"
